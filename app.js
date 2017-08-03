@@ -1,6 +1,5 @@
 // STEP ONE: Importing and setting up express's app()
 var express = require('express');
-var router = require('./routes')
 var app = express();
 
 // STEP TWO: Setting up our primary event 'listen'er.
@@ -24,6 +23,6 @@ app.get('*', function(req, res, next){
 });
 
 //STEP SIX: routing into a subrouter
-
+var router = require('./routes')
 app.use('/router', router);
 
