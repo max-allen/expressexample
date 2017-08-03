@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.big {
+  width: 100vw;
+  height: 30vh;
+}

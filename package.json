@@ -1,0 +1,17 @@
+{
+  "name": "how-do-i-express-myself",
+  "version": "1.0.0",
+  "description": "example express app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "keywords": [],
+  "author": "smores-team",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "volleyball": "^1.4.1"
+  }
+}
