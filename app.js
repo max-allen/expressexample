@@ -16,13 +16,15 @@ app.use(volleyball)
 
 app.use(express.static('public'));
 
-//STEP FIVE: Setting up an index route.
+//STEP FIVE: routing into a subrouter
 
-app.get('*', function(req, res, next){
-  res.send('File not found')
-});
-
-//STEP SIX: routing into a subrouter
 var router = require('./routes')
 app.use('/router', router);
+
+//STEP SIX: Setting up a catch-all route.
+
+app.get('*', function(req, res, next){
+  res.send('File not found');
+});
+
 
